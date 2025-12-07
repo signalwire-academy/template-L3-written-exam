@@ -1,0 +1,25 @@
+name: Grade Exam
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  grade:
+    if: contains(github.event.issue.labels.*.name, 'exam-submission')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Grade exam
+        uses: signalwire-academy/exam-grader@v1
+        with:
+          answer-key-json: ${{ secrets.EXAM_L3_ANSWERS }}
+          passing-score: 70
+          show-answers-on-pass: true
+          close-on-pass: true
