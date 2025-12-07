@@ -1,8 +1,8 @@
 # Level 3: Written Exam
 
 **Time Limit:** 75 minutes  
-**Questions:** 30  
-**Passing Score:** 70%
+**Questions:** 50  
+**Passing Score:** 80% (40/50)
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Your exam is automatically graded when you submit. Results appear as a comment o
 
 ## After Passing
 
-Once you pass this written exam, you can proceed to the Level 3 Practical Exam.
+Once you pass this written exam, you can proceed to the Level 3 Practical Exam (Capstone Project).
 
 ---
 
