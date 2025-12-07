@@ -10,12 +10,15 @@ permissions:
 
 jobs:
   grade:
-    if: contains(github.event.issue.labels.*.name, 'exam-submission')
+    # Only run for exam submissions, skip bot actions
+    if: |
+      contains(github.event.issue.labels.*.name, 'exam-submission') &&
+      github.actor != 'github-classroom[bot]'
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Grade exam
         uses: signalwire-academy/exam-grader@v1
         with:
