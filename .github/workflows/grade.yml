@@ -10,10 +10,11 @@ permissions:
 
 jobs:
   grade:
-    # Only run for exam submissions, skip bot actions
+    # Only run for exam submissions, skip bot actions and template repos
     if: |
       contains(github.event.issue.labels.*.name, 'exam-submission') &&
-      github.actor != 'github-classroom[bot]'
+      github.actor != 'github-classroom[bot]' &&
+      !startsWith(github.repository, 'signalwire-academy/template-')
     runs-on: ubuntu-latest
 
     steps:
