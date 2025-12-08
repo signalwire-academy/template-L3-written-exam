@@ -29,7 +29,11 @@ Your exam is automatically graded when you submit. Results appear as a comment o
 
 ## After Passing
 
-Once you pass this written exam, you can proceed to the Level 3 Practical Exam (Capstone Project).
+Once you pass this written exam, proceed to the practical exam.
+
+## Next Assignment
+
+Ready to continue? [**Start Level 3 Practical Exam**](https://classroom.github.com/a/TFGGsCoG)
 
 ---
 
